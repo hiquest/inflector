@@ -37,8 +37,9 @@
     }
 
     Inflector.prototype.inflect = function(n) {
-      var length, s;
-      s = "" + (parsed(n));
+      var length, num, s;
+      num = parsed(n);
+      s = "" + num;
       length = s.length;
       if (length === 1) {
         return flat(num, this.words);

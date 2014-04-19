@@ -31,7 +31,8 @@ class @Inflector
     # n - number of string (get parsed as decimal)
     inflect: (n) ->
         # TODO: prevent other types?
-        s = "#{parsed(n)}"
+        num = parsed(n)
+        s = "#{num}"
         length = s.length
         if length == 1
             flat(num, @words)
